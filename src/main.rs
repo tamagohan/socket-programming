@@ -3,7 +3,7 @@ use std::env;
 #[macro_use]
 extern crate log;
 
-//mod tcp_client;
+mod tcp_client;
 mod tcp_server;
 //mod udp_client;
 //mod udp_server;
@@ -25,7 +25,7 @@ fn main() {
                 tcp_server::serve(address).unwrap_or_else(|e| error!("{}", e));
             }
             "client" => {
-                // TODO: call TCP client
+                tcp_client::connect(address).unwrap_or_else(|e| error!("{}", e));
             }
             _ => {
                 missing_role();
