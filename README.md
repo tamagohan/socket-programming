@@ -25,3 +25,11 @@
   # example
   cargo run udp server 127.0.0.1:33333
   ```
+
+* start UDP Client
+
+  ```shell
+  cargo run udp client <address>:<port>
+  # example
+  cargo run udp client 127.0.0.1:33333
+  ```
