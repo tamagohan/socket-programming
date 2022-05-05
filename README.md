@@ -4,7 +4,7 @@
 
 ### How to use TCP/UDP clinet/server
 
-Change directory to '/server_and_client'
+Change directory to `/server_and_client`
 
 * start TCP Server
 
@@ -54,6 +54,8 @@ Change directory to `packet-capture`
   ```
 
 ### How to run webserver
+
+Change directory to `webserver`
 
 * Place the html files you want to host under the webroot folder in advance
 * Run the webserver
