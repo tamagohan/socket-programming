@@ -52,3 +52,12 @@ Change directory to `packet-capture`
   # example
   sudo sudo ./target/debug/packet-capture en0
   ```
+
+### How to run webserver
+
+* Place the html files you want to host under the webroot folder in advance
+* Run the webserver
+
+  ```shell
+  cargo run 127.0.0.1:8080
+  ```
